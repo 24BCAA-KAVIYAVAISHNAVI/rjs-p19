@@ -1,108 +1,85 @@
-# Program 19 – Student Profile Website Using React Router
+# React Practical - 3
+
+## Title
+Build a Student Marks Card using React Props
 
 ## Aim
 
-To create a multi-page student profile website using React Router.
+To create reusable React components using **props** and display student details using **Bootstrap Cards**.
 
 ## Problem Statement
 
-Develop a React application with Home and About pages.
+Create a React component named **StudentCard** that displays student information using Bootstrap Cards.
 
-### Home Page
+Each card should display:
 
-* Display a student photograph.
-* Display the student's name.
-* Include a short introduction.
+- Student Image
+- Student Name
+- Register Number
+- Department
+- Marks Scored
 
-### About Page
+Use **props** to pass the student details to the component.
 
-Include the following sections:
-
-1. Academic Background
-2. Projects
-3. Family Background
-4. Interests
-
-Use `BrowserRouter`, `Routes`, `Route`, and `Link` to navigate between the pages without a full-page reload.
-
-## Technologies
-
-* React
-* JavaScript
-* HTML and CSS
-* React Router DOM
-* GitHub Actions
-* GitHub Pages
-
-## Setup
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the application:
-
-```bash
-npm start
-```
-
-Run automated tests:
-
-```bash
-npm test
-```
-
-Build the application:
-
-```bash
-npm run build
-```
+Display **three student cards**.
 
 ## Instructions
 
-1. Complete the TODO sections in the provided starter files.
-2. Implement the navigation using `Link`.
-3. Configure routes for `/` and `/about`.
-4. Add the student image at `public/student.jpg`.
-5. Complete both pages with appropriate profile information.
-6. Test the navigation and page content.
-7. Push the completed project to GitHub.
-
-Use fictional details or obtain permission before publishing a real student's photograph or personal and family information.
+- Do not modify **index.html**.
+- Write your solution only in **index.js**.
+- Create a reusable component named **StudentCard**.
+- Use **props** to receive the student details.
+- Display three Bootstrap cards.
+- Use Bootstrap classes to design the cards.
 
 ## Expected Output
 
-The Home page displays the student image and introduction.
+Display three Bootstrap cards similar to the following.
 
-The About page displays academic details, projects, family background, and interests.
+-----------------------------------
+| Student Image                   |
+|---------------------------------|
+| Name : Arun Kumar               |
+| Register No : 23BCA001          |
+| Department : BCA                |
+| Marks : 485                     |
+-----------------------------------
 
-Users can switch between Home and About using navigation links.
+(Repeat for three students)
 
-## GitHub Actions
+## Files Provided
 
-GitHub Actions checks the project structure, React Router usage, tests, and production build.
+```
+.
+├── index.html
+├── index.js
+├── package.json
+├── images
+│   ├── student1.jpg
+│   ├── student2.jpg
+│   └── student3.jpg
+├── tests
+│   ├── test.js
+│   └── test.sh
+└── .github
+    └── workflows
+        └── autograding.yml
+```
 
-## Deployment
+## Mark Distribution
 
-Enable GitHub Pages using **Settings → Pages → Build and deployment → GitHub Actions**.
-
-The website URL will be:
-
-`https://<username>.github.io/<repository-name>/`
-
-## Evaluation – 10 Marks
-
-| Criteria                                      |  Marks |
-| --------------------------------------------- | -----: |
-| BrowserRouter, Routes, and Route              |      2 |
-| Navigation using Link                         |      2 |
-| Home page with student image and introduction |      2 |
-| About page with all four required sections    |      2 |
-| Tests, GitHub Actions, and deployment         |      2 |
-| **Total**                                     | **10** |
+| Criteria | Marks |
+|----------|------:|
+| StudentCard component created | 2 |
+| Props used correctly | 2 |
+| Bootstrap Card used | 2 |
+| Three Student Cards displayed | 2 |
+| Student image displayed | 2 |
+| **Total** | **10** |
 
 ## Submission
 
-Submit the GitHub repository URL and the live GitHub Pages URL.
+1. Complete the program in **index.js**.
+2. Commit your changes.
+3. Push to GitHub.
+4. GitHub Actions will automatically evaluate your assignment.
